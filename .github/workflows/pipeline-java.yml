@@ -20,6 +20,6 @@ jobs:
           echo "Building"
 
       - name: SonarCloud Analysis
-            run: |
-               chmod +x gradlew
-               ./gradlew build sonar -Dsonar.token=${{ secrets.TOKEN_SONARCLOUD }}    
+        run: |
+           chmod +x gradlew
+           ./gradlew build sonar -Dsonar.token=${{ secrets.TOKEN_SONARCLOUD }}    
